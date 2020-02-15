@@ -57,7 +57,7 @@ def stat_motif(pass_mat):
     return motif_mat
 
 
-def div_seq(seq_csv, full_csv, matchID, matchPeriod):
+def div_seq(seq_csv, full_csv, data_pd, matchID, matchPeriod):
     assert (matchID > 0 & matchID <= 38)
     scene_idx = (seq_csv.loc[:, 'MatchID'] == matchID)
     event_idx = (full_csv.loc[:, 'MatchID'] == matchID)
@@ -73,7 +73,7 @@ def div_seq(seq_csv, full_csv, matchID, matchPeriod):
     scene.index = range(sum(scene_idx))
     scene.columns = ['Team', 'Orig', 'Dest', 'Time', 'ox', 'dx']
 
-    event = seq_csv.loc[event_idx].loc[:, ['EventTime', 'EventType']]
+    event = full_csv.loc[event_idx].loc[:, ['EventTime', 'EventType']]
     event.index = range(sum(event_idx))
     event.columns = ['Time', 'Event']
     duel_idx = (event.loc[:, 'Event'] == 'Duel')
@@ -151,7 +151,7 @@ def div_seq(seq_csv, full_csv, matchID, matchPeriod):
     tmp_dict['shot'] = sum(time_idx & shot_idx)
     data_store.append(tmp_dict)
 
-    data_pd = pd.DataFrame()
+
     for idx, li in enumerate(data_store):
         data_pd.loc[idx, 'team'] = li['team']
         data_pd.loc[idx, 's_time'] = li['s_time']
@@ -179,6 +179,10 @@ if __name__ == '__main__':
     Full_csv = pd.read_csv(full_dir,
                           usecols=['MatchID', 'MatchPeriod', 'EventTime', 'EventType'])
     # seq_csv.shape = (23429, 6)
+
+    data_pd = pd.DataFrame()
     for ID in range(1, 39):
-        div_seq(Seq_csv, Full_csv, ID, '1H')
-        div_seq(Seq_csv, Full_csv, ID, '2H')
+        div_seq(Seq_csv, Full_csv, data_pd, ID, '1H')
+        div_seq(Seq_csv, Full_csv, data_pd, ID, '2H')
+
+
