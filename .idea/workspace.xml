@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="87772481-a456-4485-b1a6-37ce225b7973" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/MicroscopicAnalysis.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/motif_code.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tactical_position.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tactical_position.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_10_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_10_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_11_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_11_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_12_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_12_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_13_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_13_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_14_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_14_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_15_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_15_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_16_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_16_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_17_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_17_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_18_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_18_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_19_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_19_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_1_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_1_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_20_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_20_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_21_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_21_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_22_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_22_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_23_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_23_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_24_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_24_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_25_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_25_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_26_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_26_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_27_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_27_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_28_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_28_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_29_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_29_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_2_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_2_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_30_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_30_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_31_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_31_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_32_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_32_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_33_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_33_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_34_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_34_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_35_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_35_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_36_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_36_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_37_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_37_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_38_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_38_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_3_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_3_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_4_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_4_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_5_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_5_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_6_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_6_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_7_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_7_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_8_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_8_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_9_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif_9_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/partition.py" beforeDir="false" afterPath="$PROJECT_DIR$/partition.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1XpxFOuvYekb8Jy8JYLAok6gowt" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tactical_position" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MicroscopicAnalysis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tactical_position.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Tactical_position" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="87772481-a456-4485-b1a6-37ce225b7973" name="Default Changelist" comment="" />
+      <created>1581756732719</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581756732719</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Tactical_position.py</url>
+          <line>12</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

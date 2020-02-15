@@ -62,7 +62,7 @@ def div_seq(seq_csv, full_csv, pd_name, matchID, matchPeriod):
     assert (matchID > 0 & matchID <= 38)
     scene_idx = (seq_csv.loc[:, 'MatchID'] == matchID)
     event_idx = (full_csv.loc[:, 'MatchID'] == matchID)
-    output_dir = 'output/motif_' + str(matchID)
+    output_dir = 'output/motif/motif_' + str(matchID)
     if matchPeriod == '1H' or matchPeriod == '2H':
         scene_idx = scene_idx & (seq_csv.loc[:, 'MatchPeriod'] == matchPeriod)
         event_idx = event_idx & (full_csv.loc[:, 'MatchPeriod'] == matchPeriod)
