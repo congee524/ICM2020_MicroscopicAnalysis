@@ -57,12 +57,14 @@ def stat_motif(pass_mat):
     return motif_mat
 
 
-def div_seq(seq_csv, matchID, matchPeriod):
+def div_seq(seq_csv, full_csv, matchID, matchPeriod):
     assert (matchID > 0 & matchID <= 38)
     scene_idx = (seq_csv.loc[:, 'MatchID'] == matchID)
+    event_idx = (full_csv.loc[:, 'MatchID'] == matchID)
     output_dir = 'output/motif_' + str(matchID)
     if matchPeriod == '1H' or matchPeriod == '2H':
         scene_idx = scene_idx & (seq_csv.loc[:, 'MatchPeriod'] == matchPeriod)
+        event_idx = event_idx & (full_csv.loc[:, 'MatchPeriod'] == matchPeriod)
         output_dir += ('_' + matchPeriod)
     output_dir += '.csv'
 
@@ -70,6 +72,12 @@ def div_seq(seq_csv, matchID, matchPeriod):
             ['TeamID', 'OriginPlayerID', 'DestinationPlayerID', 'EventTime', 'EventOrigin_x', 'EventDestination_x']]
     scene.index = range(sum(scene_idx))
     scene.columns = ['Team', 'Orig', 'Dest', 'Time', 'ox', 'dx']
+
+    event = seq_csv.loc[event_idx].loc[:, ['EventTime', 'EventType']]
+    event.index = range(sum(event_idx))
+    event.columns = ['Time', 'Event']
+    duel_idx = (event.loc[:, 'Event'] == 'Duel')
+    shot_idx = (event.loc[:, 'Event'] == 'Shot')
 
     data_store = []
 
@@ -98,6 +106,9 @@ def div_seq(seq_csv, matchID, matchPeriod):
             tmp_dict['team'] = team
             tmp_dict['ox'] = ox
             tmp_dict['dx'] = dx
+            time_idx = (event.loc[:, 'Time'] >= s_time) & (event.loc[:, 'Time'] < e_time)
+            tmp_dict['duel'] = sum(time_idx & duel_idx)
+            tmp_dict['shot'] = sum(time_idx & shot_idx)
             data_store.append(tmp_dict)
 
             orig = row['Orig']
@@ -135,6 +146,9 @@ def div_seq(seq_csv, matchID, matchPeriod):
     tmp_dict['team'] = team
     tmp_dict['ox'] = ox
     tmp_dict['dx'] = dx
+    time_idx = (event.loc[:, 'Time'] >= s_time) & (event.loc[:, 'Time'] < e_time)
+    tmp_dict['duel'] = sum(time_idx & duel_idx)
+    tmp_dict['shot'] = sum(time_idx & shot_idx)
     data_store.append(tmp_dict)
 
     data_pd = pd.DataFrame()
@@ -145,6 +159,8 @@ def div_seq(seq_csv, matchID, matchPeriod):
         data_pd.loc[idx, 'ox'] = li['ox']
         data_pd.loc[idx, 'dx'] = li['dx']
         data_pd.loc[idx, 'dis'] = li['dx'] - li['ox']
+        data_pd.loc[idx, 'duel'] = li['duel']
+        data_pd.loc[idx, 'shot'] = li['shot']
         for ix in range(1, 14):
             data_pd.loc[idx, 'motif_' + str(ix)] = li['motif'][ix]
         for name in li['player_inv']:
@@ -154,12 +170,15 @@ def div_seq(seq_csv, matchID, matchPeriod):
 
 
 if __name__ == '__main__':
-    input_dir = './data/passingevents.csv'
+    passing_dir = './data/passingevents.csv'
+    full_dir = './data/fullevents.csv'
 
-    Seq_csv = pd.read_csv(input_dir,
+    Seq_csv = pd.read_csv(passing_dir,
                           usecols=['MatchID', 'TeamID', 'OriginPlayerID', 'DestinationPlayerID', 'MatchPeriod',
                                    'EventTime', 'EventOrigin_x', 'EventDestination_x'])
+    Full_csv = pd.read_csv(full_dir,
+                          usecols=['MatchID', 'MatchPeriod', 'EventTime', 'EventType'])
     # seq_csv.shape = (23429, 6)
     for ID in range(1, 39):
-        div_seq(Seq_csv, ID, '1H')
-        div_seq(Seq_csv, ID, '2H')
+        div_seq(Seq_csv, Full_csv, ID, '1H')
+        div_seq(Seq_csv, Full_csv, ID, '2H')
