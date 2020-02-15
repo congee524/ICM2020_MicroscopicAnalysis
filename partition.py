@@ -1,5 +1,6 @@
 import pandas as pd
 from itertools import permutations
+import json
 
 
 def stat_motif(pass_mat):
@@ -57,7 +58,7 @@ def stat_motif(pass_mat):
     return motif_mat
 
 
-def div_seq(seq_csv, full_csv, data_pd, matchID, matchPeriod):
+def div_seq(seq_csv, full_csv, pd_name, matchID, matchPeriod):
     assert (matchID > 0 & matchID <= 38)
     scene_idx = (seq_csv.loc[:, 'MatchID'] == matchID)
     event_idx = (full_csv.loc[:, 'MatchID'] == matchID)
@@ -151,7 +152,7 @@ def div_seq(seq_csv, full_csv, data_pd, matchID, matchPeriod):
     tmp_dict['shot'] = sum(time_idx & shot_idx)
     data_store.append(tmp_dict)
 
-
+    data_pd = pd.DataFrame(columns=pd_name)
     for idx, li in enumerate(data_store):
         data_pd.loc[idx, 'team'] = li['team']
         data_pd.loc[idx, 's_time'] = li['s_time']
@@ -163,8 +164,9 @@ def div_seq(seq_csv, full_csv, data_pd, matchID, matchPeriod):
         data_pd.loc[idx, 'shot'] = li['shot']
         for ix in range(1, 14):
             data_pd.loc[idx, 'motif_' + str(ix)] = li['motif'][ix]
-        for name in li['player_inv']:
-            data_pd.loc[idx, name] = True
+        if li['team'] == 'Huskies':
+            for name in li['player_inv']:
+                data_pd.loc[idx, name] = True
 
     data_pd.to_csv(output_dir)
 
@@ -172,17 +174,18 @@ def div_seq(seq_csv, full_csv, data_pd, matchID, matchPeriod):
 if __name__ == '__main__':
     passing_dir = './data/passingevents.csv'
     full_dir = './data/fullevents.csv'
-
+    name_dir = './data/players.json'
     Seq_csv = pd.read_csv(passing_dir,
                           usecols=['MatchID', 'TeamID', 'OriginPlayerID', 'DestinationPlayerID', 'MatchPeriod',
                                    'EventTime', 'EventOrigin_x', 'EventDestination_x'])
-    Full_csv = pd.read_csv(full_dir,
-                          usecols=['MatchID', 'MatchPeriod', 'EventTime', 'EventType'])
-    # seq_csv.shape = (23429, 6)
+    Full_csv = pd.read_csv(full_dir, usecols=['MatchID', 'MatchPeriod', 'EventTime', 'EventType'])
+    with open(name_dir) as f:
+        player_name = json.load(f)
+    Pd_name = ['team', 's_time', 'e_time', 'duel', 'shot', 'ox', 'dx', 'dis']
+    for i in range(1, 14):
+        Pd_name.append('motif_' + str(i))
+    Pd_name += player_name
 
-    data_pd = pd.DataFrame()
     for ID in range(1, 39):
-        div_seq(Seq_csv, Full_csv, data_pd, ID, '1H')
-        div_seq(Seq_csv, Full_csv, data_pd, ID, '2H')
-
-
+        div_seq(Seq_csv, Full_csv, Pd_name, ID, '1H')
+        div_seq(Seq_csv, Full_csv, Pd_name, ID, '2H')
