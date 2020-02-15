@@ -4,7 +4,7 @@ import json
 
 
 def stat_motif(pass_mat):
-    motif_mat = [0 for _ in range(14)]
+    motif_mat = [0 for _ in range(16)]
     p_num = len(pass_mat)
     if p_num < 3:
         return motif_mat
@@ -31,6 +31,10 @@ def stat_motif(pass_mat):
         motif_mat[13] += min(pass_mat.iloc[p[0], p[1]], pass_mat.iloc[p[1], p[2]], pass_mat.iloc[p[2], p[0]],
                              pass_mat.iloc[p[1], p[0]], pass_mat.iloc[p[2], p[1]], pass_mat.iloc[p[0], p[2]])
 
+    for p in permutations(range(p_num), 2):
+        motif_mat[14] += pass_mat.iloc[p[0], p[1]]
+        motif_mat[15] += min(pass_mat.iloc[p[0], p[1]], pass_mat.iloc[p[1], p[0]])
+
     # remove repeated motifs
     for i in range(1, 13):
         motif_mat[i] -= motif_mat[13]
@@ -54,7 +58,7 @@ def stat_motif(pass_mat):
         motif_mat[i] -= motif_mat[4]
     for i in [1, 2]:
         motif_mat[i] -= motif_mat[3]
-
+    motif_mat[14] -= motif_mat[15]
     return motif_mat
 
 
@@ -130,7 +134,7 @@ def div_seq(seq_csv, full_csv, pd_name, matchID, matchPeriod):
             Pass_mat.loc[orig, dest] += 1
         else:
             dest = row['Dest']
-            dx = scene.loc[0, 'dx']
+            dx = row['dx']
             if dest not in player_inv:
                 Pass_mat[dest] = 0
                 Pass_mat.loc[dest] = 0
@@ -162,7 +166,7 @@ def div_seq(seq_csv, full_csv, pd_name, matchID, matchPeriod):
         data_pd.loc[idx, 'dis'] = li['dx'] - li['ox']
         data_pd.loc[idx, 'duel'] = li['duel']
         data_pd.loc[idx, 'shot'] = li['shot']
-        for ix in range(1, 14):
+        for ix in range(1, 16):
             data_pd.loc[idx, 'motif_' + str(ix)] = li['motif'][ix]
         if li['team'] == 'Huskies':
             for name in li['player_inv']:
@@ -182,7 +186,7 @@ if __name__ == '__main__':
     with open(name_dir) as f:
         player_name = json.load(f)
     Pd_name = ['team', 's_time', 'e_time', 'duel', 'shot', 'ox', 'dx', 'dis']
-    for i in range(1, 14):
+    for i in range(1, 16):
         Pd_name.append('motif_' + str(i))
     Pd_name += player_name
 

@@ -3,7 +3,83 @@
   <component name="ChangeListManager">
     <list default="true" id="87772481-a456-4485-b1a6-37ce225b7973" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tactical_position.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tactical_position.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_10_1H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_10_1H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_10_2H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_10_2H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_11_1H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_11_1H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_11_2H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_11_2H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_12_1H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_12_1H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_12_2H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_12_2H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_13_1H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_13_1H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_13_2H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_13_2H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_14_1H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_14_1H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_14_2H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_14_2H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_15_1H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_15_1H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_15_2H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_15_2H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_16_1H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_16_1H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_16_2H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_16_2H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_17_1H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_17_1H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_17_2H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_17_2H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_18_1H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_18_1H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_18_2H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_18_2H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_19_1H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_19_1H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_19_2H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_19_2H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_1_1H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_1_1H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_1_2H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_1_2H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_20_1H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_20_1H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_20_2H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_20_2H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_21_1H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_21_1H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_21_2H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_21_2H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_22_1H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_22_1H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_22_2H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_22_2H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_23_1H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_23_1H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_23_2H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_23_2H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_24_1H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_24_1H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_24_2H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_24_2H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_25_1H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_25_1H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_25_2H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_25_2H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_26_1H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_26_1H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_26_2H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_26_2H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_27_1H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_27_1H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_27_2H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_27_2H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_28_1H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_28_1H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_28_2H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_28_2H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_29_1H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_29_1H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_29_2H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_29_2H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_2_1H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_2_1H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_2_2H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_2_2H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_30_1H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_30_1H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_30_2H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_30_2H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_31_1H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_31_1H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_31_2H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_31_2H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_32_1H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_32_1H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_32_2H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_32_2H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_33_1H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_33_1H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_33_2H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_33_2H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_34_1H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_34_1H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_34_2H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_34_2H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_35_1H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_35_1H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_35_2H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_35_2H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_36_1H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_36_1H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_36_2H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_36_2H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_37_1H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_37_1H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_37_2H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_37_2H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_38_1H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_38_1H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_38_2H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_38_2H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_3_1H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_3_1H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_3_2H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_3_2H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_4_1H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_4_1H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_4_2H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_4_2H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_5_1H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_5_1H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_5_2H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_5_2H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_6_1H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_6_1H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_6_2H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_6_2H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_7_1H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_7_1H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_7_2H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_7_2H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_8_1H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_8_1H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_8_2H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_8_2H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_9_1H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_9_1H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/motif/motif_9_2H.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/motif/motif_9_2H.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/partition.py" beforeDir="false" afterPath="$PROJECT_DIR$/partition.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +106,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.partition">
     <configuration name="Tactical_position" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MicroscopicAnalysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -52,8 +128,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="partition" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MicroscopicAnalysis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/partition.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.partition" />
         <item itemvalue="Python.Tactical_position" />
       </list>
     </recent_temporary>
