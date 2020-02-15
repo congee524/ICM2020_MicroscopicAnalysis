@@ -7,6 +7,12 @@ def stat_motif(pass_mat):
     motif_mat = [0 for _ in range(16)]
     p_num = len(pass_mat)
     if p_num < 3:
+        if p_num >= 2:
+            for p in permutations(range(p_num), 2):
+                motif_mat[14] += pass_mat.iloc[p[0], p[1]]
+                motif_mat[15] += min(pass_mat.iloc[p[0], p[1]], pass_mat.iloc[p[1], p[0]])
+            motif_mat[15] /= 2
+            # motif_mat[14] -= motif_mat[15]
         return motif_mat
 
     # count all motifs
@@ -35,30 +41,39 @@ def stat_motif(pass_mat):
         motif_mat[14] += pass_mat.iloc[p[0], p[1]]
         motif_mat[15] += min(pass_mat.iloc[p[0], p[1]], pass_mat.iloc[p[1], p[0]])
 
-    # remove repeated motifs
-    for i in range(1, 13):
-        motif_mat[i] -= motif_mat[13]
-    for i in range(1, 12):
-        motif_mat[i] -= motif_mat[12]
-    for i in [2, 4]:
-        motif_mat[i] -= motif_mat[11]
-    for i in [1, 4, 5, 9]:
-        motif_mat[i] -= motif_mat[10]
-    for i in []:
-        motif_mat[i] -= motif_mat[9]
-    for i in [1, 2, 3, 7]:
-        motif_mat[i] -= motif_mat[8]
-    for i in []:
-        motif_mat[i] -= motif_mat[7]
-    for i in [1, 2, 3, 4, 5]:
-        motif_mat[i] -= motif_mat[6]
-    for i in [1, 4]:
-        motif_mat[i] -= motif_mat[5]
-    for i in []:
-        motif_mat[i] -= motif_mat[4]
-    for i in [1, 2]:
-        motif_mat[i] -= motif_mat[3]
-    motif_mat[14] -= motif_mat[15]
+    motif_mat[1] /= 2
+    motif_mat[4] /= 2
+    motif_mat[6] /= 2
+    motif_mat[8] /= 2
+    motif_mat[9] /= 3
+    motif_mat[11] /= 2
+    motif_mat[13] /= 3
+    motif_mat[15] /= 2
+    #
+    # # remove repeated motifs
+    # for i in range(1, 13):
+    #     motif_mat[i] -= motif_mat[13]
+    # for i in range(1, 12):
+    #     motif_mat[i] -= motif_mat[12]
+    # for i in [2, 4]:
+    #     motif_mat[i] -= motif_mat[11]
+    # for i in [1, 4, 5, 9]:
+    #     motif_mat[i] -= motif_mat[10]
+    # for i in []:
+    #     motif_mat[i] -= motif_mat[9]
+    # for i in [1, 2, 3, 7]:
+    #     motif_mat[i] -= motif_mat[8]
+    # for i in []:
+    #     motif_mat[i] -= motif_mat[7]
+    # for i in [1, 2, 3, 4, 5]:
+    #     motif_mat[i] -= motif_mat[6]
+    # for i in [1, 4]:
+    #     motif_mat[i] -= motif_mat[5]
+    # for i in []:
+    #     motif_mat[i] -= motif_mat[4]
+    # for i in [1, 2]:
+    #     motif_mat[i] -= motif_mat[3]
+    # motif_mat[14] -= motif_mat[15]
     return motif_mat
 
 
