@@ -7,7 +7,7 @@ from torch import nn
 class MotifGrade(nn.Module):
     def __init__(self):
         super().__init__()
-        self.para = torch.tensor([0.2, 0.5]).unsqueeze(1).double()
+        self.para = torch.tensor([0.5, 0.5]).unsqueeze(1).double()
         self.para.requires_grad = True
 
     def forward(self, x1, x2):
@@ -18,8 +18,8 @@ class MotifGrade(nn.Module):
 
 if __name__ == '__main__':
     base_in = './output/grade/'
-    x1 = torch.tensor(np.array(pd.read_csv(base_in + 'trainX.csv', index_col=0)))
-    x2 = torch.tensor(np.array(pd.read_csv(base_in + 'motif_cnt.csv', index_col=0)))
+    x1 = torch.tensor(np.array(pd.read_csv(base_in + 'trainX1.csv', index_col=0)))
+    x2 = torch.tensor(np.array(pd.read_csv(base_in + 'motif_cnt2.csv', index_col=0)))
     y = torch.tensor(np.array(pd.read_csv(base_in + 'trainY.csv', index_col=0)))
 
     steps = 10000000
@@ -36,3 +36,4 @@ if __name__ == '__main__':
         optimizer.step()
         if step % 10000 == 0:
             print("Step: [%d] Loss: %F Para: %s" % (step, loss.item(), motif_grade.para))
+            print(grade.T)

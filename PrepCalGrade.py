@@ -15,7 +15,7 @@ if __name__ == '__main__':
                 res.loc[i, 'outcome'] = -1
             else:
                 res.loc[i, 'outcome'] = 0
-    res.to_csv(base_out + 'trainY.csv')
+    # res.to_csv(base_out + 'trainY.csv')
 
     col = []
     for i in range(1, 16):
@@ -35,6 +35,9 @@ if __name__ == '__main__':
             count_motif.loc['Opponent', pre_m] = sum(mo_idx & oppo_idx)
         for i in range(1, 16):
             pre_m = 'motif_' + str(i)
-            ret.loc[ID, pre_m] = count_motif.loc['Huskies', pre_m] / sum(count_motif.loc['Huskies']) - count_motif.loc[
-                'Opponent', pre_m] / sum(count_motif.loc['Opponent'])
-    ret.to_csv(base_out + 'trainX.csv')
+            # ret.loc[ID, pre_m] = count_motif.loc['Huskies', pre_m] / sum(count_motif.loc['Huskies']) - count_motif.loc[
+            #     'Opponent', pre_m] / sum(count_motif.loc['Opponent'])
+            ret.loc[ID, pre_m] = (count_motif.loc['Huskies', pre_m] - count_motif.loc[
+                'Opponent', pre_m]) / (sum(count_motif.loc['Opponent']) + sum(count_motif.loc['Huskies']))
+    # ret.to_csv(base_out + 'trainX.csv')
+    ret.to_csv(base_out + 'trainX1.csv')
