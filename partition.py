@@ -93,11 +93,13 @@ def div_seq(seq_csv, full_csv, pd_name, matchID, matchPeriod):
     scene.index = range(sum(scene_idx))
     scene.columns = ['Team', 'Orig', 'Dest', 'Time', 'ox', 'dx']
 
-    event = full_csv.loc[event_idx].loc[:, ['EventTime', 'EventType']]
+    event = full_csv.loc[event_idx].loc[:, ['TeamID', 'EventTime', 'EventType']]
     event.index = range(sum(event_idx))
-    event.columns = ['Time', 'Event']
+    event.columns = ['Team', 'Time', 'Event']
     duel_idx = (event.loc[:, 'Event'] == 'Duel')
     shot_idx = (event.loc[:, 'Event'] == 'Shot')
+    hask_idx = (event.loc[:, 'Team'] == 'Huskies')
+    oppo_idx = ~hask_idx
 
     data_store = []
 
@@ -105,7 +107,6 @@ def div_seq(seq_csv, full_csv, pd_name, matchID, matchPeriod):
     dest = orig
     team = scene.loc[0, 'Team']
     s_time = scene.loc[0, 'Time']
-    e_time = s_time
     ox = scene.loc[0, 'ox']
     dx = scene.loc[0, 'dx']
     player_inv = set()
@@ -127,15 +128,18 @@ def div_seq(seq_csv, full_csv, pd_name, matchID, matchPeriod):
             tmp_dict['ox'] = ox
             tmp_dict['dx'] = dx
             time_idx = (event.loc[:, 'Time'] >= s_time) & (event.loc[:, 'Time'] < e_time)
-            tmp_dict['duel'] = sum(time_idx & duel_idx)
-            tmp_dict['shot'] = sum(time_idx & shot_idx)
+            if team == 'Huskies':
+                tmp_dict['duel'] = sum(time_idx & duel_idx & oppo_idx)
+                tmp_dict['shot'] = sum(time_idx & shot_idx & hask_idx)
+            else:
+                tmp_dict['duel'] = sum(time_idx & duel_idx & hask_idx)
+                tmp_dict['shot'] = sum(time_idx & shot_idx & oppo_idx)
             data_store.append(tmp_dict)
 
             orig = row['Orig']
             dest = row['Dest']
             team = row['Team']
             s_time = row['Time']
-            e_time = s_time
             ox = row['ox']
             dx = row['dx']
             player_inv = set()
