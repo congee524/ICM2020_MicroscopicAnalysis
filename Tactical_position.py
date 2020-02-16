@@ -28,18 +28,20 @@ if __name__ == '__main__':
         Player_name = json.load(f)
 
     for ID in range(1, 39):
-        event_idx = (full_csv.loc[:, 'MatchID'] == ID) & (full_csv.loc[:, 'MatchPeriod'] == '1H')
+        # event_idx = (full_csv.loc[:, 'MatchID'] == ID) & (full_csv.loc[:, 'MatchPeriod'] == '1H')
+        event_idx = (full_csv.loc[:, 'MatchID'] == ID)
         Event = full_csv.loc[event_idx].loc[:,
                 ['OriginPlayerID', 'DestinationPlayerID', 'EventOrigin_x', 'EventOrigin_y',
                  'EventDestination_x', 'EventDestination_y']]
         data_pd = cal_pos(Event, Player_name)
-        output_dir = 'output/pos/pos_' + str(ID) + '_1H.csv'
+        # output_dir = 'output/pos/pos_' + str(ID) + '_1H.csv'
+        output_dir = 'output/pos/pos_' + str(ID) + '.csv'
         data_pd.to_csv(output_dir)
 
-        event_idx = (full_csv.loc[:, 'MatchID'] == ID) & (full_csv.loc[:, 'MatchPeriod'] == '2H')
-        Event = full_csv.loc[event_idx].loc[:,
-                ['OriginPlayerID', 'DestinationPlayerID', 'EventOrigin_x', 'EventOrigin_y',
-                 'EventDestination_x', 'EventDestination_y']]
-        data_pd = cal_pos(Event, Player_name)
-        output_dir = 'output/pos/pos_' + str(ID) + '_2H.csv'
-        data_pd.to_csv(output_dir)
+        # event_idx = (full_csv.loc[:, 'MatchID'] == ID) & (full_csv.loc[:, 'MatchPeriod'] == '2H')
+        # Event = full_csv.loc[event_idx].loc[:,
+        #         ['OriginPlayerID', 'DestinationPlayerID', 'EventOrigin_x', 'EventOrigin_y',
+        #          'EventDestination_x', 'EventDestination_y']]
+        # data_pd = cal_pos(Event, Player_name)
+        # output_dir = 'output/pos/pos_' + str(ID) + '_2H.csv'
+        # data_pd.to_csv(output_dir)

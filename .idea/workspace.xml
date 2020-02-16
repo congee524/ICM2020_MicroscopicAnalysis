@@ -2,9 +2,129 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87772481-a456-4485-b1a6-37ce225b7973" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/DrawPassingNetwork.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/Match1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/closeness.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/pos_1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/pos/pos_1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/pos/pos_10.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/pos/pos_11.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/pos/pos_12.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/pos/pos_13.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/pos/pos_14.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/pos/pos_15.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/pos/pos_16.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/pos/pos_17.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/pos/pos_18.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/pos/pos_19.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/pos/pos_2.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/pos/pos_20.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/pos/pos_21.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/pos/pos_22.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/pos/pos_23.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/pos/pos_24.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/pos/pos_25.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/pos/pos_26.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/pos/pos_27.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/pos/pos_28.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/pos/pos_29.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/pos/pos_3.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/pos/pos_30.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/pos/pos_31.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/pos/pos_32.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/pos/pos_33.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/pos/pos_34.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/pos/pos_35.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/pos/pos_36.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/pos/pos_37.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/pos/pos_38.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/pos/pos_4.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/pos/pos_5.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/pos/pos_6.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/pos/pos_7.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/pos/pos_8.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/pos/pos_9.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MicroscopicAnalysis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MicroscopicAnalysis.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CalGrade.py" beforeDir="false" afterPath="$PROJECT_DIR$/CalGrade.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrepCalGrade.py" beforeDir="false" afterPath="$PROJECT_DIR$/PrepCalGrade.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tactical_position.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tactical_position.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_10_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_10_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_11_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_11_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_12_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_12_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_13_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_13_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_14_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_14_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_15_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_15_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_16_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_16_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_17_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_17_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_18_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_18_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_19_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_19_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_1_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_1_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_20_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_20_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_21_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_21_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_22_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_22_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_23_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_23_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_24_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_24_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_25_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_25_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_26_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_26_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_27_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_27_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_28_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_28_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_29_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_29_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_2_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_2_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_30_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_30_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_31_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_31_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_32_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_32_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_33_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_33_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_34_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_34_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_35_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_35_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_36_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_36_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_37_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_37_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_38_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_38_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_3_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_3_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_4_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_4_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_5_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_5_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_6_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_6_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_7_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_7_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_8_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_8_2H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_9_1H.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pos/pos_9_2H.csv" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +147,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
   <component name="RunDashboard">
@@ -41,7 +162,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.CalGrade">
+  <component name="RunManager" selected="Python.DrawPassingNetwork">
     <configuration name="CalGrade" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MicroscopicAnalysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -63,7 +184,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Motif_analyse" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="DrawPassingNetwork" type="PythonConfigurationType" factoryName="Python">
       <module name="MicroscopicAnalysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -75,7 +196,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Motif_analyse.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DrawPassingNetwork.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -105,6 +226,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Tactical_position" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MicroscopicAnalysis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tactical_position.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="cancat_motif" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MicroscopicAnalysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -126,34 +268,12 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="partition" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="MicroscopicAnalysis" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/partition.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.CalGrade" />
+        <item itemvalue="Python.Tactical_position" />
         <item itemvalue="Python.PrepCalGrade" />
         <item itemvalue="Python.cancat_motif" />
-        <item itemvalue="Python.Motif_analyse" />
-        <item itemvalue="Python.partition" />
       </list>
     </recent_temporary>
   </component>
@@ -181,6 +301,9 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -188,11 +311,6 @@
           <url>file://$PROJECT_DIR$/PrepCalGrade.py</url>
           <line>9</line>
           <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/CalGrade.py</url>
-          <line>15</line>
-          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

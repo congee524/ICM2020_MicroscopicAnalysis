@@ -7,11 +7,14 @@ from torch import nn
 class MotifGrade(nn.Module):
     def __init__(self):
         super().__init__()
-        self.para = torch.tensor([0.5, 0.5]).unsqueeze(1).double()
+        self.para = torch.DoubleTensor(np.random.random((2, 1)))
+        self.para2 = torch.DoubleTensor(np.random.random((15, 1)))
         self.para.requires_grad = True
+        self.para2.requires_grad = True
 
     def forward(self, x1, x2):
-        x3 = torch.matmul(x1, x2)
+        tt = x2 * self.para2
+        x3 = torch.matmul(x1, tt)
         x4 = torch.matmul(x3, self.para)
         x5 = torch.tanh(x4)
         return x5
@@ -25,7 +28,7 @@ if __name__ == '__main__':
     steps = 10000000
 
     motif_grade = MotifGrade()
-    optimizer = torch.optim.SGD([motif_grade.para], lr=2.5e-2)
+    optimizer = torch.optim.SGD([motif_grade.para, motif_grade.para2], lr=2.5e-2)
     loss_fn = nn.MSELoss()
 
     for step in range(1, steps + 1):
@@ -35,5 +38,7 @@ if __name__ == '__main__':
         loss.backward()
         optimizer.step()
         if step % 10000 == 0:
-            print("Step: [%d] Loss: %F Para: %s" % (step, loss.item(), motif_grade.para))
+            print("Step: [%d] Loss: %F" % (step, loss.item()))
+            print(motif_grade.para.T)
+            print(motif_grade.para2.T)
             print(grade.T)
