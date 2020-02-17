@@ -1,5 +1,7 @@
+"""
+the program is used to draw the passing network applying networkx
+"""
 import networkx as nx
-from pylab import show
 import pandas as pd
 import matplotlib as mpl
 import matplotlib.pyplot as plt
@@ -26,15 +28,16 @@ if __name__ == '__main__':
     for i in range(11):
         pass_net += pass_csv.iloc[i].to_list()
 
-    node_sizes = [i * 60 for i in close_list]
-    edge_colors = [i for i in pass_net]
-    edge_alphas = [i / max(pass_net) for i in pass_net]
+    node_sizes = [i * 120 for i in close_list] # node_sizes represents the closeness of the players
+    edge_colors = [i + 20 for i in pass_net] # use the color exchange to note the passing times
+    edge_alphas = [0 if i == 0 else 1 for i in pass_net]
+    # if there's no passing between the certain two player, the edge is invisible
     # edge_width = [i / 2 for i in pass_net]
-    edge_width = 3
+    edge_width = 6
 
     nodes = nx.draw_networkx_nodes(G, pos, node_size=node_sizes, node_color='red')
     edges = nx.draw_networkx_edges(G, pos, node_size=node_sizes, arrowstyle='->',
-                                   arrowsize=10, edge_color=edge_colors,
+                                   arrowsize=20, edge_color=edge_colors,
                                    edge_cmap=plt.cm.Blues, width=edge_width)
     # set alpha value for each edge
     for i in range(11):

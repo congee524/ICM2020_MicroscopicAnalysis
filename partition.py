@@ -1,3 +1,11 @@
+"""
+the program is used to divide sequences in matches,
+record some valuable information in fullevents.csv and matches.csv,
+and then count the motifs
+
+the sequences are divided according to the possession of the ball
+"""
+
 import pandas as pd
 from itertools import permutations
 import json
@@ -17,6 +25,8 @@ def stat_motif(pass_mat):
 
     # count all motifs
     for p in permutations(range(p_num), 3):
+        # choose all possible three players i.e. the permutations
+        # and then check that whether the sequence meet some formation conditions of the motifs
         motif_mat[1] += min(pass_mat.iloc[p[1], p[0]], pass_mat.iloc[p[1], p[2]])
         motif_mat[2] += min(pass_mat.iloc[p[1], p[0]], pass_mat.iloc[p[2], p[1]])
         motif_mat[3] += min(pass_mat.iloc[p[1], p[0]], pass_mat.iloc[p[1], p[2]], pass_mat.iloc[p[2], p[1]])
@@ -41,6 +51,7 @@ def stat_motif(pass_mat):
         motif_mat[14] += pass_mat.iloc[p[0], p[1]]
         motif_mat[15] += min(pass_mat.iloc[p[0], p[1]], pass_mat.iloc[p[1], p[0]])
 
+    # remove the repeated motif due of the symmetry
     motif_mat[1] /= 2
     motif_mat[4] /= 2
     motif_mat[6] /= 2
@@ -49,31 +60,7 @@ def stat_motif(pass_mat):
     motif_mat[11] /= 2
     motif_mat[13] /= 3
     motif_mat[15] /= 2
-    #
-    # # remove repeated motifs
-    # for i in range(1, 13):
-    #     motif_mat[i] -= motif_mat[13]
-    # for i in range(1, 12):
-    #     motif_mat[i] -= motif_mat[12]
-    # for i in [2, 4]:
-    #     motif_mat[i] -= motif_mat[11]
-    # for i in [1, 4, 5, 9]:
-    #     motif_mat[i] -= motif_mat[10]
-    # for i in []:
-    #     motif_mat[i] -= motif_mat[9]
-    # for i in [1, 2, 3, 7]:
-    #     motif_mat[i] -= motif_mat[8]
-    # for i in []:
-    #     motif_mat[i] -= motif_mat[7]
-    # for i in [1, 2, 3, 4, 5]:
-    #     motif_mat[i] -= motif_mat[6]
-    # for i in [1, 4]:
-    #     motif_mat[i] -= motif_mat[5]
-    # for i in []:
-    #     motif_mat[i] -= motif_mat[4]
-    # for i in [1, 2]:
-    #     motif_mat[i] -= motif_mat[3]
-    # motif_mat[14] -= motif_mat[15]
+
     return motif_mat
 
 
@@ -98,6 +85,7 @@ def div_seq(seq_csv, full_csv, pd_name, matchID, matchPeriod):
     event.columns = ['Team', 'Time', 'Event']
     duel_idx = (event.loc[:, 'Event'] == 'Duel')
     shot_idx = (event.loc[:, 'Event'] == 'Shot')
+    # split into two teams to count
     hask_idx = (event.loc[:, 'Team'] == 'Huskies')
     oppo_idx = ~hask_idx
 
@@ -117,6 +105,7 @@ def div_seq(seq_csv, full_csv, pd_name, matchID, matchPeriod):
 
     for index, row in scene.iterrows():
         if row['Orig'] != dest:
+            # means that the last sequence ended
             e_time = row['Time']
             Motif_mat = stat_motif(Pass_mat)
             tmp_dict = {}
@@ -160,7 +149,7 @@ def div_seq(seq_csv, full_csv, pd_name, matchID, matchPeriod):
                 player_inv.add(row['Dest'])
             Pass_mat.loc[row['Orig'], dest] += 1
 
-    e_time = 3900.0
+    e_time = 3900.0 # 3900 is the longest possible time for a match
     Motif_mat = stat_motif(Pass_mat)
     tmp_dict = {}
     tmp_dict['player_inv'] = player_inv

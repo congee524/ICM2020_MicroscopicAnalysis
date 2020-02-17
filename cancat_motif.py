@@ -1,3 +1,6 @@
+"""
+to integrate data relevant of motif
+"""
 import pandas as pd
 
 if __name__ == '__main__':

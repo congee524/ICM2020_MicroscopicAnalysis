@@ -1,3 +1,6 @@
+"""
+the program is used to generate the data in need to tune the parameters of motif indicator
+"""
 import pandas as pd
 
 if __name__ == '__main__':

@@ -1,3 +1,7 @@
+"""
+the program is served as tuning the parameters of motif indicator
+"""
+
 import pandas as pd
 import numpy as np
 import torch
@@ -24,6 +28,7 @@ if __name__ == '__main__':
     x1 = torch.tensor(np.array(pd.read_csv(base_in + 'trainX1.csv', index_col=0)))
     x2 = torch.tensor(np.array(pd.read_csv(base_in + 'motif_cnt2.csv', index_col=0)))
     y = torch.tensor(np.array(pd.read_csv(base_in + 'trainY.csv', index_col=0)))
+    # y -- represent the outcome, win -> 1, loss -> -1, tie -> 0, since the three outcomes are not standing alone
 
     steps = 10000000
 

@@ -1,3 +1,7 @@
+"""
+the program is used to calculate the tactical position of the players
+the tactical position is the central position of the players appearance position in a match
+"""
 import pandas as pd
 import json
 
