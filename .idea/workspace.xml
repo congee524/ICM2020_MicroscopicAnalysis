@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87772481-a456-4485-b1a6-37ce225b7973" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/image/motif.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/passingnetwork.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/grade/预测数据.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalGrade.py" beforeDir="false" afterPath="$PROJECT_DIR$/CalGrade.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DrawPassingNetwork.py" beforeDir="false" afterPath="$PROJECT_DIR$/DrawPassingNetwork.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Motif_analyse.py" beforeDir="false" afterPath="$PROJECT_DIR$/Motif_analyse.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrepCalGrade.py" beforeDir="false" afterPath="$PROJECT_DIR$/PrepCalGrade.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tactical_position.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tactical_position.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cancat_motif.py" beforeDir="false" afterPath="$PROJECT_DIR$/cancat_motif.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/partition.py" beforeDir="false" afterPath="$PROJECT_DIR$/partition.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/grade/trainY.csv" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
